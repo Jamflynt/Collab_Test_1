@@ -1,0 +1,48 @@
+Commands/terms we will be going over: 
+
+1. git status - Displays paths that have differences between the index file and the current HEAD commit, paths that have differences between the working tree and the index file, and paths in the working tree that are not tracked
+
+2. git log - Shows the commit logs
+
+3. git ls-files - Show information about files in the index and the working tree
+
+4. HEAD - The tip of the branch is referenced by a branch head, which moves forward as additional development is done on the branch. A single Git repository can track an arbitrary number of branches, but your working tree is associated with just one of them (the "current" or "checked out" branch), and HEAD points to that branch.
+
+5. git branch - shows all existing branches
+
+6. git branch <branch-name> - creates branch with entered branch name
+
+7. git checkout <branch-name> - switches to entered branch name
+
+8. git checkout -b <branch-name> - creates and switched to entered branch name
+
+9. git checkout <COMMIT ID> . - brings HEAD back to that commit state
+
+10. git checkout <COMMIT ID> - creates a detached head state using that commit state
+
+11. git switch <branch-name> - (new git syntax specific to branches) switches to entered branch name
+
+12. git switch -c <branch-name> - (new git syntax specific to branches) creates and switched to entered branch name
+
+13. git merge <branch-name> - merges selected branch into current branch
+
+
+14. git rm <file-name> - Remove files from the working tree and from the index
+
+15. git checkout -- <working-file> - removes untracked changes in entered file name from current branch (the -- stands for current branch)
+
+16. git checkout -- . - removes untracked changes in all files from current branch
+
+17. git clean -dn - shows what untracked files will be removed
+
+18. git clean -df - forces untracked files to be removed
+
+19. git reset <file-name> - removes a staged change from file (note must run git checkout <file-name> to bring HEAD back and remove change)
+
+20. git restore --staged <file-name> - removes a staged change from file (note must run git checkout <file-name> to bring HEAD back and remove change)
+
+21. git reset --soft HEAD~(# of commits) -  removes the commit but not the staged change (i.e. the add)
+
+22. git reset HEAD~(# of commits) - removes the commit and the staged change (i.e. the add)
+
+23. git reset --hard HEAD~(# of commits) - removes everything, the commit, the staged change, and the actual change from the working directory (RECOMMEND NOT USING OR TRIPLE CHECKING BEFORE YOU USE)
